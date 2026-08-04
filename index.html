@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MiCo —— 与你同行，让智能有温度。MiCo 个人助理、数字员工、协同、会议，重新定义智能办公体验。" />
+  <title>MiCo · 与你同行，让智能有温度</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 顶部滚动进度条 -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- 吸顶磨砂导航 -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#top" aria-label="MiCo 首页">
+        <span class="nav__mark"></span>
+        <span class="nav__brand">MiCo</span>
+      </a>
+      <nav class="nav__links" aria-label="主导航">
+        <a href="#products">产品</a>
+        <a href="#news">动态</a>
+        <a href="#ecosystem">生态</a>
+        <a href="#about">关于</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换明暗主题" title="切换明暗主题">
+          <span class="theme-toggle__icon">🌙</span>
+        </button>
+        <a href="#products" class="btn btn--primary btn--sm">免费体验</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="blob blob--1"></span>
+      <span class="blob blob--2"></span>
+      <span class="blob blob--3"></span>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow reveal">MiCo 智能办公家族</p>
+      <h1 class="hero__title reveal" data-delay="80">
+        与你同行，<br /><span class="grad-text">让智能有温度</span>
+      </h1>
+      <p class="hero__subtitle reveal" data-delay="160">
+        从个人助理到数字员工，从协同到会议——<br class="br-mobile" />
+        MiCo 以丝滑的智能体验，陪你把每一天过得更高效、更从容。
+      </p>
+      <div class="hero__cta reveal" data-delay="240">
+        <a href="#products" class="btn btn--primary btn--lg">免费体验 MiCo</a>
+        <a href="#products" class="btn btn--ghost btn--lg">了解产品家族 →</a>
+      </div>
+
+      <!-- 悬浮设备展示 -->
+      <div class="hero__stage reveal" data-delay="360">
+        <div class="device device--phone">
+          <div class="device__notch"></div>
+          <div class="device__screen">
+            <div class="ui-chip ui-chip--assistant">
+              <span class="ui-dot"></span>
+              <div>
+                <strong>MiCo 个人助理</strong>
+                <p>已为你整理今日 3 项重点日程</p>
+              </div>
+            </div>
+            <div class="ui-line"></div>
+            <div class="ui-line ui-line--short"></div>
+            <div class="ui-bubble">下午三点的评审会，要我提前准备材料吗？</div>
+          </div>
+        </div>
+        <div class="device device--window">
+          <div class="window__bar">
+            <span class="window__dot window__dot--r"></span>
+            <span class="window__dot window__dot--y"></span>
+            <span class="window__dot window__dot--g"></span>
+            <span class="window__title">MiCo 协同 · 团队空间</span>
+          </div>
+          <div class="window__body">
+            <div class="ui-row"><span class="ui-avatar">协</span><div class="ui-track"><div class="ui-fill" style="width:82%"></div></div></div>
+            <div class="ui-row"><span class="ui-avatar">会</span><div class="ui-track"><div class="ui-fill" style="width:64%"></div></div></div>
+            <div class="ui-row"><span class="ui-avatar">员</span><div class="ui-track"><div class="ui-fill" style="width:91%"></div></div></div>
+            <div class="ui-card-mini">本周智能纪要 · 12 份已生成</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#news" class="hero__scroll" aria-label="向下滚动">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- 最新动态 -->
+  <section class="section section--news" id="news">
+    <div class="section__head reveal">
+      <p class="section__eyebrow">最新动态</p>
+      <h2 class="section__title">MiCo 正在发生的事</h2>
+    </div>
+    <div class="news-grid">
+      <article class="news-card reveal" data-delay="0">
+        <span class="news-card__tag">新发布</span>
+        <h3>MiCo-V2 智能体引擎上线</h3>
+        <p>更强的自主规划与工具调用能力，复杂任务也能一步步稳稳落地。</p>
+        <a class="news-card__link" href="#products">查看详情 →</a>
+      </article>
+      <article class="news-card reveal" data-delay="80">
+        <span class="news-card__tag">会议</span>
+        <h3>实时多语种转写，支持 30+ 语言</h3>
+        <p>MiCo 会议现已覆盖中英日韩等 30+ 语种，跨国协作无障碍。</p>
+        <a class="news-card__link" href="#products">立即体验 →</a>
+      </article>
+      <article class="news-card reveal" data-delay="160">
+        <span class="news-card__tag">生态</span>
+        <h3>数字员工接入企业微信与钉钉</h3>
+        <p>开箱即用，你的 AI 同事直接住进团队已有的工作流。</p>
+        <a class="news-card__link" href="#ecosystem">了解生态 →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 产品矩阵 -->
+  <section class="section section--products" id="products">
+    <div class="section__head reveal">
+      <p class="section__eyebrow">产品矩阵</p>
+      <h2 class="section__title">一个家族，四种默契</h2>
+      <p class="section__lead">从个人到团队，从对话到执行，MiCo 提供端到端的智能办公体验。</p>
+    </div>
+    <div class="product-grid">
+      <a class="product-card reveal" data-delay="0" href="#p-assistant">
+        <div class="product-card__icon product-card__icon--a">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V7a4 4 0 0 1 4-4Z"/><path d="M5 20a7 7 0 0 1 14 0"/><circle cx="12" cy="9" r="1.4" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>MiCo 个人助理</h3>
+        <p>你的随身智能伙伴，日程、备忘、检索、写作一气呵成。</p>
+        <span class="product-card__go">了解更多 →</span>
+      </a>
+      <a class="product-card reveal" data-delay="80" href="#p-employee">
+        <div class="product-card__icon product-card__icon--b">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M9 13h6M9 16h4"/></svg>
+        </div>
+        <h3>MiCo 数字员工</h3>
+        <p>7×24 在线的 AI 同事，自动处理流程、文档与客服。</p>
+        <span class="product-card__go">了解更多 →</span>
+      </a>
+      <a class="product-card reveal" data-delay="160" href="#p-collab">
+        <div class="product-card__icon product-card__icon--c">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 6a3 3 0 0 1 0 6"/><path d="M17 20a6 6 0 0 0-3-5.2"/></svg>
+        </div>
+        <h3>MiCo 协同</h3>
+        <p>团队知识中枢，实时协作、智能整理与沉淀。</p>
+        <span class="product-card__go">了解更多 →</span>
+      </a>
+      <a class="product-card reveal" data-delay="240" href="#p-meeting">
+        <div class="product-card__icon product-card__icon--d">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10l5-3v10l-5-3"/></svg>
+        </div>
+        <h3>MiCo 会议</h3>
+        <p>会开会，更会总结——实时转写、智能纪要、行动项。</p>
+        <span class="product-card__go">了解更多 →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 子产品详情：交替布局 -->
+  <section class="detail" id="p-assistant">
+    <div class="detail__inner">
+      <div class="detail__text reveal">
+        <p class="detail__eyebrow">MiCo 个人助理</p>
+        <h2 class="detail__title">你的随身智能伙伴</h2>
+        <p class="detail__desc">一句话完成日程、备忘、信息检索与写作。它懂你的习惯，越用越懂你——把琐碎交给它，把专注留给你。</p>
+        <ul class="detail__list">
+          <li>自然语言驱动，跨应用一键操作</li>
+          <li>主动提醒与智能整理，信息不再淹没</li>
+          <li>本地优先隐私保护，数据只属于你</li>
+        </ul>
+        <a href="#products" class="btn btn--primary">开始使用</a>
+      </div>
+      <div class="detail__visual reveal" data-delay="120">
+        <div class="mock mock--chat">
+          <div class="mock__bar"><span class="mock__title">MiCo 个人助理</span><span class="mock__live">在线</span></div>
+          <div class="mock__chat">
+            <div class="bubble bubble--in">帮我预约周四和设计师的对齐会，并准备上次的稿子。</div>
+            <div class="bubble bubble--out">已创建日程 · 周四 15:00<br />已附上《品牌稿 v3》📎</div>
+            <div class="bubble bubble--in">太好了，顺便提醒我带样品。</div>
+            <div class="bubble bubble--out">已加入提醒 ✅ 周四 14:30 带样品</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail detail--alt" id="p-employee">
+    <div class="detail__inner">
+      <div class="detail__visual reveal">
+        <div class="mock mock--flow">
+          <div class="mock__bar"><span class="mock__title">MiCo 数字员工 · 工作流</span></div>
+          <div class="flow">
+            <div class="flow__node">收到工单</div>
+            <div class="flow__arrow">→</div>
+            <div class="flow__node flow__node--active">自动分类</div>
+            <div class="flow__arrow">→</div>
+            <div class="flow__node">生成回复</div>
+            <div class="flow__arrow">→</div>
+            <div class="flow__node flow__node--done">已闭环</div>
+          </div>
+          <div class="mock__stat"><span>今日已处理</span><strong>1,284</strong><span>件</span></div>
+        </div>
+      </div>
+      <div class="detail__text reveal" data-delay="120">
+        <p class="detail__eyebrow">MiCo 数字员工</p>
+        <h2 class="detail__title">7×24 在线的 AI 同事</h2>
+        <p class="detail__desc">自动处理流程、文档与客服，把重复劳动交给 MiCo，把创造力留给你。它不吃饭、不请假，只把结果准时送到。</p>
+        <ul class="detail__list">
+          <li>可视化编排，零代码搭建专属员工</li>
+          <li>对接业务系统，端到端自动执行</li>
+          <li>全程可追溯，每一步都看得见</li>
+        </ul>
+        <a href="#products" class="btn btn--primary">配置我的员工</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail" id="p-collab">
+    <div class="detail__inner">
+      <div class="detail__text reveal">
+        <p class="detail__eyebrow">MiCo 协同</p>
+        <h2 class="detail__title">团队知识中枢</h2>
+        <p class="detail__desc">实时协作、智能整理与沉淀，让团队的每一份知识都触手可及。再也不用翻聊天记录找那句"上次说的"。</p>
+        <ul class="detail__list">
+          <li>多人在线编辑，改动实时同步</li>
+          <li>AI 自动归类与摘要，知识自生长</li>
+          <li>全局搜索，一句话找到任何资料</li>
+        </ul>
+        <a href="#products" class="btn btn--primary">创建团队空间</a>
+      </div>
+      <div class="detail__visual reveal" data-delay="120">
+        <div class="mock mock--docs">
+          <div class="mock__bar"><span class="mock__title">MiCo 协同 · 知识库</span></div>
+          <div class="doc">
+            <div class="doc__row"><span class="doc__ic">📄</span>产品需求文档 PRD<span class="doc__tag">已同步</span></div>
+            <div class="doc__row"><span class="doc__ic">🧠</span>AI 自动摘要 · 3 条要点<span class="doc__tag">新</span></div>
+            <div class="doc__row"><span class="doc__ic">💬</span>设计评审纪要<span class="doc__tag">已同步</span></div>
+            <div class="doc__search">搜索团队知识…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail detail--alt" id="p-meeting">
+    <div class="detail__inner">
+      <div class="detail__visual reveal">
+        <div class="mock mock--meeting">
+          <div class="mock__bar"><span class="mock__title">MiCo 会议 · 进行中</span><span class="mock__live mock__live--rec">REC</span></div>
+          <div class="meeting">
+            <div class="meeting__tiles">
+              <span class="m-tile">林</span><span class="m-tile">陈</span><span class="m-tile">王</span><span class="m-tile">+</span>
+            </div>
+            <div class="meeting__transcript">
+              <p><b>林：</b>这版方案的核心指标是什么？</p>
+              <p><b>陈：</b>把留存提升到 45%，下周出排期。</p>
+              <p class="meeting__action">✅ 行动项：陈负责排期 · 周五前</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail__text reveal" data-delay="120">
+        <p class="detail__eyebrow">MiCo 会议</p>
+        <h2 class="detail__title">会开会，更会总结</h2>
+        <p class="detail__desc">实时转写、智能纪要、自动行动项，让每次会议都有结果。散会即出纪要，谁该做什么一目了然。</p>
+        <ul class="detail__list">
+          <li>实时多语种转写，30+ 语言无障碍</li>
+          <li>自动提炼结论与待办，散会即同步</li>
+          <li>一键回看，重点片段秒定位</li>
+        </ul>
+        <a href="#products" class="btn btn--primary">预约演示</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 生态滚动 -->
+  <section class="section section--ecosystem" id="ecosystem">
+    <div class="section__head reveal">
+      <p class="section__eyebrow">共建生态</p>
+      <h2 class="section__title">与你的工具，自然相连</h2>
+    </div>
+    <div class="marquee reveal">
+      <div class="marquee__track">
+        <span>企业微信</span><span>钉钉</span><span>飞书</span><span>Slack</span><span>Notion</span><span>Outlook</span><span>Zoom</span><span>腾讯文档</span><span>飞书文档</span><span>Jira</span>
+        <span>企业微信</span><span>钉钉</span><span>飞书</span><span>Slack</span><span>Notion</span><span>Outlook</span><span>Zoom</span><span>腾讯文档</span><span>飞书文档</span><span>Jira</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section class="section section--about" id="about">
+    <div class="about reveal">
+      <p class="section__eyebrow">关于 MiCo</p>
+      <h2 class="about__title">智能，本该有温度</h2>
+      <p class="about__text">
+        我们相信，智能的核心不是更冷的参数，而是更懂人的陪伴。MiCo 不只是屏幕背后的工具，
+        更想成为你现实中的同事：读懂你的文字，看见你的世界，激发你的灵感，与你一起把复杂变简单。
+      </p>
+      <div class="about__stats">
+        <div><strong>4</strong><span>智能产品线</span></div>
+        <div><strong>30+</strong><span>会议语种</span></div>
+        <div><strong>99.9%</strong><span>服务可用性</span></div>
+        <div><strong>24/7</strong><span>数字员工在线</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__mark"></span>
+        <span class="nav__brand">MiCo</span>
+        <p>与你同行，让智能有温度。</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>产品</h4>
+          <a href="#p-assistant">个人助理</a>
+          <a href="#p-employee">数字员工</a>
+          <a href="#p-collab">协同</a>
+          <a href="#p-meeting">会议</a>
+        </div>
+        <div>
+          <h4>资源</h4>
+          <a href="#news">最新动态</a>
+          <a href="#ecosystem">生态集成</a>
+          <a href="#about">关于我们</a>
+        </div>
+        <div>
+          <h4>联系</h4>
+          <a href="#top">商务合作</a>
+          <a href="#top">帮助中心</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 MiCo. 保留所有权利。</span>
+      <span>本页面为品牌演示站点，非真实产品。</span>
+    </div>
+  </footer>
+
+  <!-- 超大品牌滚动视差区（页脚最底部） -->
+  <section class="mega-brand" id="megaBrand" aria-label="MiCo 品牌展示">
+    <div class="mega-brand__track">
+      <span class="mega-brand__text">MiCo 连接一切</span>
+    </div>
+  </section>
+
+  <!-- 移动端悬浮 Dock -->
+  <nav class="dock" aria-label="快捷产品">
+    <a href="#p-assistant" title="个人助理">🤖</a>
+    <a href="#p-employee" title="数字员工">💼</a>
+    <a href="#p-collab" title="协同">🤝</a>
+    <a href="#p-meeting" title="会议">🎥</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
