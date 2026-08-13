@@ -59,10 +59,11 @@
     saved = localStorage.getItem("mico-theme");
   } catch (e) {}
   if (!saved) {
+    // 默认深色；仅当系统明确偏好浅色时才用浅色
     saved = window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+      window.matchMedia("(prefers-color-scheme: light)").matches
+      ? "light"
+      : "dark";
   }
   applyTheme(saved);
 
