@@ -488,7 +488,7 @@ h1, h2, h3, h4,
 /* ---------- 产品矩阵 ---------- */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 .product-card {
